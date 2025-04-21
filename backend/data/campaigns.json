@@ -10,5 +10,17 @@
     "platform": "GOOGLE",
     "id": "46a1c516-e4ee-4b58-9365-527283df17cd",
     "created_at": "2025-04-20 11:35:32.121507"
+  },
+  "164f6dd5-e15e-4006-99b5-a77271b40137": {
+    "platform_id": "K-123",
+    "name": "Summer Sale 2025",
+    "status": "ACTIVE",
+    "objective": "CONVERSIONS",
+    "daily_budget": "500",
+    "start_date": "2025-04-21",
+    "end_date": "2025-04-25",
+    "platform": "GOOGLE",
+    "id": "164f6dd5-e15e-4006-99b5-a77271b40137",
+    "created_at": "2025-04-21 21:16:09.463952"
   }
 }
