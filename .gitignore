@@ -56,3 +56,5 @@ htmlcov/
 .coverage.*
 coverage.xml
 *.cover 
+
+.cursorrules
