@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 96.1%;
+    --foreground: 0 0% 0%;
+    
+    --primary: 359 69% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    --card: 0 0% 96.1%;
+    --card-foreground: 0 0% 0%;
+    
+    --border: 359 69% 53%;
+    --input: 359 69% 53%;
+    --ring: 359 69% 53%;
+    
+    --radius: 0.5rem;
+    
+    --sidebar-background: 0 0% 96.1%;
+    --sidebar-foreground: 0 0% 0%;
+    --sidebar-primary: 359 69% 53%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 359 69% 53%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 359 69% 53%;
+    --sidebar-ring: 359 69% 53%;
+  }
+
+  .dark {
+    --background: 0 0% 96.1%;
+    --foreground: 0 0% 0%;
+    
+    --card: 0 0% 96.1%;
+    --card-foreground: 0 0% 0%;
+    
+    --border: 359 69% 53%;
+    --input: 359 69% 53%;
+    --ring: 359 69% 53%;
+  }
+
+  * {
+    @apply border-border;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .stats-card {
+    @apply bg-white rounded-lg shadow-sm p-4 flex flex-col;
+  }
+  
+  .stats-card-title {
+    @apply text-sm font-medium text-gray-500;
+  }
+  
+  .stats-card-value {
+    @apply text-2xl font-semibold mt-2;
+  }
+  
+  .stats-card-trend {
+    @apply text-xs mt-1 flex items-center;
+  }
+  
+  .trend-up {
+    @apply text-success;
+  }
+  
+  .trend-down {
+    @apply text-danger;
+  }
+}
